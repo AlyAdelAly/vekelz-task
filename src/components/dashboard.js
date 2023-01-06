@@ -43,21 +43,21 @@ const cardsInfo = [
     {
         title: "64% Recommend",
         body: "Mini Cooper",
-        image: require('./car1.png'),
+        image: require('./assets/car1.png'),
         price: '132K',
         perHour: '$32/h'
     },
     {
         title: "74% Recommend",
         body: "Porsche 911 Carrera",
-        image: require('./car2.png'),
+        image: require('./assets/car2.png'),
         price: '130K',
         perHour: '$28/h'
     },
     {
         title: "74% Recommend",
         body: "Porsche 911 Carrera",
-        image: require('./car3.png'),
+        image: require('./assets/car3.png'),
         price: '130K',
         perHour: '$28/h'
     }

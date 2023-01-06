@@ -9,7 +9,7 @@ const carCardsInfo = [
     {
         title: "Porshe 718 Cayman S",
         body: "Coupe",
-        image: require('./car1.png'),
+        image: require('./assets/car1.png'),
         manual: 'Manual',
         perHour: '$400/d',
         user: '4'
@@ -17,7 +17,7 @@ const carCardsInfo = [
     {
         title: "Porshe 718 Cayman S",
         body: "Coupe",
-        image: require('./car2.png'),
+        image: require('./assets/car2.png'),
         manual: 'Manual',
         perHour: '$400/d',
         user: '4'
@@ -25,7 +25,7 @@ const carCardsInfo = [
     {
         title: "Porshe 718 Cayman S",
         body: "Coupe",
-        image: require('./car3.png'),
+        image: require('./assets/car3.png'),
         manual: 'Manual',
         perHour: '$400/d',
         user: '4'
@@ -33,7 +33,7 @@ const carCardsInfo = [
     {
         title: "Porshe 718 Cayman S",
         body: "Coupe",
-        image: require('./car3.png'),
+        image: require('./assets/car3.png'),
         manual: 'Manual',
         perHour: '$400/d',
         user: '4'
@@ -41,7 +41,7 @@ const carCardsInfo = [
     {
         title: "Porshe 718 Cayman S",
         body: "Coupe",
-        image: require('./car2.png'),
+        image: require('./assets/car2.png'),
         manual: 'Manual',
         perHour: '$400/d',
         user: '4'
@@ -49,7 +49,7 @@ const carCardsInfo = [
     {
         title: "Porshe 718 Cayman S",
         body: "Coupe",
-        image: require('./car1.png'),
+        image: require('./assets/car1.png'),
         manual: 'Manual',
         perHour: '$400/d',
         user: '4'
@@ -57,7 +57,7 @@ const carCardsInfo = [
     {
         title: "Porshe 718 Cayman S",
         body: "Coupe",
-        image: require('./car2.png'),
+        image: require('./assets/car2.png'),
         manual: 'Manual',
         perHour: '$400/d',
         user: '4'
@@ -65,7 +65,7 @@ const carCardsInfo = [
     {
         title: "Porshe 718 Cayman S",
         body: "Coupe",
-        image: require('./car1.png'),
+        image: require('./assets/car1.png'),
         manual: 'Manual',
         perHour: '$400/d',
         user: '4'
@@ -73,7 +73,7 @@ const carCardsInfo = [
     {
         title: "Porshe 718 Cayman S",
         body: "Coupe",
-        image: require('./car3.png'),
+        image: require('./assets/car3.png'),
         manual: 'Manual',
         perHour: '$400/d',
         user: '4'

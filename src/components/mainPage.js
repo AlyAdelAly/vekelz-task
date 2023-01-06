@@ -53,12 +53,12 @@ const MainPage = () => {
                 </div>
                 <div className='flex flex-row items-center absolute right-6 px-4'>
                     <MdNotifications size={25} className='mr-5 text-gray-100' />
-                    <img className='rounded-full w-[40px]' src={require('./avatar.png')} alt='' />
+                    <img className='rounded-full w-[40px]' src={require('./assets/avatar.png')} alt='' />
                 </div>
             </div>
             <div className='w-60 h-full px-1 fixed'>
                 <h2 className='text-2xl pb-4 text-white'>
-                    <img className='inline px-1' src={require('./logo.png')} alt='' /> Motiv
+                    <img className='inline px-1' src={require('./assets/logo.png')} alt='' /> Motiv
                 </h2>
                 <nav className='flex flex-col'>
                     <ul>
