@@ -1,6 +1,6 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
-import { AiOutlineSearch } from 'react-icons/ai'
+import { AiOutlineSearch, AiOutlineMenu, AiOutlineClose } from 'react-icons/ai'
 import { BsBag, BsCalendar2Fill, BsCart, BsScissors } from 'react-icons/bs'
 import { FaCar, FaCog, FaComment, FaUser } from 'react-icons/fa'
 import { MdDashboard, MdLogout, MdNotifications } from 'react-icons/md'
@@ -42,22 +42,30 @@ const sidebarNavItemsTop = [
 ];
 
 const MainPage = () => {
+
+    const [nav, setNav] = useState(false);
     return (
         <div className='flex p-4'>
 
             <div className='flex justify-between items-center'>
-
-                <div className='ml-64 rounded-lg search-bg px-4 flex items-center w-[200px] sm:w-[200px] lg:w-[500px]'>
+                <div onClick={() => setNav(!nav)} className='cursor-pointer'>
+                    <AiOutlineMenu className='text-white' size={30} />
+                </div>
+                <div className='md:ml-12 rounded-lg search-bg px-4 flex items-center md:w-[400px] sm:w-[200px] ml-10 lg:w-[500px]'>
                     <AiOutlineSearch size={22} />
                     <input className='bg-transparent p-2 focus:outline-none w-full' type="text" placeholder='Search...' />
                 </div>
-                <div className='flex flex-row items-center absolute right-6 px-4'>
-                    <MdNotifications size={25} className='mr-5 text-gray-100' />
+                <div className='hidden md:flex items-center absolute right-6'>
+                    <MdNotifications size={25} className=' mr-5 text-gray-100' />
                     <img className='rounded-full w-[40px]' src={require('./assets/avatar.png')} alt='' />
                 </div>
             </div>
-            <div className='w-60 h-full px-1 fixed'>
-                <h2 className='text-2xl pb-4 text-white'>
+            {
+                nav ? <div className='bg-black/60 fixed w-full h-screen z-10 top-0 left-0'></div> : ''
+            }
+            <div className={nav ? 'fixed top-0 left-0 w-60 card-bg h-screen z-10 duration-300' : 'fixed top-0 left-[-100%] w-[200px] h-screen bg-white z-10 duration-300'}>
+                <AiOutlineClose onClick={() => setNav(!nav)} size={25} className='absolute right-4 top-4 cursor-pointer' />
+                <h2 className='text-2xl mt-3 text-white flex'>
                     <img className='inline px-1' src={require('./assets/logo.png')} alt='' /> Motiv
                 </h2>
                 <nav className='flex flex-col'>

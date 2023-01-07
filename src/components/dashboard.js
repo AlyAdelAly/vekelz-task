@@ -67,7 +67,7 @@ const dashboard = () => {
     return (
         <div>
             <MainPage />
-            <div className='max-w-[1640px] md:ml-64 p-4 py-4 grid md:grid-cols-2 lg:grid-cols-4 gap-6 dashboard-bg'>
+            <div className='max-w-[1640px]  p-4 py-4 grid md:grid-cols-2 lg:grid-cols-4 gap-6 dashboard-bg'>
 
                 <Card className="w-full h-full card-energy-bg relative">
                     <CardBody className='p-5 text-center'>
@@ -142,7 +142,7 @@ const dashboard = () => {
                 </Card>
             </div>
 
-            <div className='md:ml-64 p-4 py-4 grid md:grid-cols-1 custom-lg:grid-cols-1 laptop:grid-cols-2 gap-6 dashboard-bg' >
+            <div className=' p-4 py-4 grid md:grid-cols-1 custom-lg:grid-cols-1 laptop:grid-cols-2 gap-6 dashboard-bg' >
                 <Card className="w-full h-full card-bg relative">
                     <CardBody className='p-5 text-white font-bold text-lg'>
                         <Typography variant="h4" className="mb-2">
@@ -218,7 +218,7 @@ const dashboard = () => {
                 </Card>
             </div>
 
-            <div className='md:ml-64 p-4 py-4 grid md:grid-cols-1 lg:grid-cols-3 gap-6 dashboard-bg'>
+            <div className=' p-4 py-4 grid md:grid-cols-1 lg:grid-cols-3 gap-6 dashboard-bg'>
                 {
                     cardsInfo.map((item, index) => (
                         <Card key={index} className="w-full bg-gray-400 shadow-lg rounded-lg hover:scale-105 duration-300 rounded-xl relative">

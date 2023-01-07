@@ -85,7 +85,7 @@ const Booking = () => {
     return (
         <div>
             <MainPage />
-            <div className='md:ml-64 p-6 py-6 dashboard-bg text-white text-3xl font-bold'>
+            <div className='p-6 py-6 dashboard-bg text-white text-3xl font-bold'>
                 <h1>Booking</h1>
                 <div className='flex flex-row pt-4'>
                     <Button className='flex button-bg shadow-none hover:shadow-none rounded-full mr-8'>
@@ -99,7 +99,7 @@ const Booking = () => {
                     </Button>
                 </div>
             </div>
-            <div className='md:ml-64 p-4 py-4 grid md:grid-cols-1 lg:grid-cols-3 gap-6 dashboard-bg'>
+            <div className='p-4 py-4 grid md:grid-cols-1 lg:grid-cols-3 gap-6 dashboard-bg'>
                 {
                     carCardsInfo.map((item, index) => (
                         <Card key={index} className="w-full card-bg shadow-lg rounded-lg hover:scale-105 duration-300 rounded-xl relative">
